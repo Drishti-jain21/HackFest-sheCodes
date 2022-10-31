@@ -5,7 +5,7 @@ import numpy as np
 with open("weights\\oncampus.pkl", 'rb') as f:
     clf1=pickle.load(f)
 
-userdata=[[1, 2, 3, 7, 1,1,2]]
+userdata=[[0, 2, 1, 6, 1,1,1]]
                 
 
 # print(clf1.predict(userdata)) 
