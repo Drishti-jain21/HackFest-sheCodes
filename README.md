@@ -1,6 +1,6 @@
-# Get_Placed 
+# Get Placed with our StudentHelper
 
-- Predict your placements offcampus, oncampus 
+<!-- - Predict your offcampus, oncampus 
 
 To do __ 
 
@@ -20,4 +20,17 @@ To do __
 
 - Server in  Flask to Run the app 
 
-- Deployment
+- Deployment -->
+<div align="center">
+  <a id="top" href="https://main--placement-predictor.netlify.app/#" target="blank">
+    <img src="https://main--placement-predictor.netlify.app/final/assets/landing/logo.png" width="100px" alt="">
+  </a>
+
+  <h3 align="center">Get Placed - StudentHelper</h3>
+
+  <p align="center">
+    <a href="https://main--placement-predictor.netlify.app/#" target="blank">Live Demo</a> |
+    <a href="https://github.com/Drishti-jain21/HackFest-sheCodes/issues" target="blank">Report Bug</a> |
+    <a href="https://github.com/Drishti-jain21/HackFest-sheCodes/issues" target="blank">Request Feature</a>
+  </p>
+</div>
