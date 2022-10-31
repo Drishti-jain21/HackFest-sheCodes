@@ -38,16 +38,27 @@ To do __
 
 ## The motivation:
 
-The high rates of unemployment in India can be battled by increasing the employability of people. The 20–24 age group is one of the largest groups of unemployed people, of which college graduates constitute a big portion. Colleges can drastically reduce the number of unemployed graduates by introducing courses and changing the curriculum to help develop the skills that employers look for in graduates. We built a system that helps analyze the difference in the skill sets of placed and not placed students. It predicts whether a student with a given skill set would be able to secure a job or not. It uses not only technical skills but also takes into consideration other soft skills which are essential to land a job
+The high rates of unemployment in India can be battled by increasing the employability of people. The 20–24 age group is one of the largest groups of unemployed people, of which college graduates constitute a big portion. Colleges can drastically reduce the number of unemployed graduates by introducing courses and changing the curriculum to help develop the skills that employers look for in graduates. We built a system that helps in self analyzing the skill sets and your shortcomigs. It predicts whether a student with a given skill set would be able to secure a job or not. It uses not only technical skills but also takes into consideration other soft skills which are essential to land a job.
 
   <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## How it works :
 
+Through this app one can predict his or her oncampus and offcampus placemets . The app takes into consideration of Stream, backlogs, internships, location to predict oncampus placements. A student can also predict his/ her ability to get a role through offcampus. The model shows the job the candidate should apply onto based on his/ her  skills and nature. Also one can get DSA practice resources and upcoming contests from here.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Technologies Used :
 
+1. **Frontend frameworks** : `Javascript`,  `CSS`, `html` 
+
+2. **Authenciation**       : `Firebase`
+
+3. **Services**            :  `Netlify`, `Heroku` 
+
+4. **Deployment**          :  `FastAPI`
+
+5. **ML Frameworks**       : `Numpy`,  `Pandas`, `seaborn`, `Sklearn`,  `nltk`,  `catbooster`, `matplotlib`
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This project doesn't rely on any external dependencies or services._
@@ -62,7 +73,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
     pip install -r requirements.txt
    ```
-3. After all steps defined above you can run command `npm start` to run application at `localhost:3000`.
+3. After all steps defined above you can run /preview application at `localhost:3000`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
