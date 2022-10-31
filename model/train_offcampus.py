@@ -13,7 +13,7 @@ import pickle
 #Loading Dataset
 df = pd.read_csv("data\offcampus.csv")
 
-
+print(df.head())
 # Number Encoding
 cols = df[["self-learning capability?", "Extra-courses did","Taken inputs from seniors or elders", "worked in teams ever?", "Introvert"]]
 for i in cols:
@@ -46,46 +46,47 @@ feed = df[['Logical quotient rating', 'coding skills rating', 'hackathons', 'pub
            'workshops_code', 'Type of company want to settle in?_code',  'interested career area _code',
              'Suggested Job Role']]
 
+print (df.head())
+print(df.columns)
+# # Taking all independent variable columns
+# df_train_x = feed.drop('Suggested Job Role',axis = 1)
 
-# Taking all independent variable columns
-df_train_x = feed.drop('Suggested Job Role',axis = 1)
+# # Target variable column
+# df_train_y = feed['Suggested Job Role']
 
-# Target variable column
-df_train_y = feed['Suggested Job Role']
-
-# Train-Test Splitting
-x_train, x_test, y_train, y_test = train_test_split(df_train_x, df_train_y, test_size=0.20, random_state=42)
-
-
-# Decision Tree Classifier
-clf1 = tree.DecisionTreeClassifier()
-clf1 = clf1.fit(x_train, y_train)
-
-# SVM Classifier
-clf2 = svm.SVC()
-clf2 = clf2.fit(x_train, y_train)
+# # Train-Test Splitting
+# x_train, x_test, y_train, y_test = train_test_split(df_train_x, df_train_y, test_size=0.20, random_state=42)
 
 
-#Random Forest Classifier
-clf3 = RandomForestClassifier(n_estimators=100) 
-clf3 = clf3.fit(x_train, y_train)
+# # Decision Tree Classifier
+# clf1 = tree.DecisionTreeClassifier()
+# clf1 = clf1.fit(x_train, y_train)
 
-#XGBoost Classifier
-clf4 = XGBClassifier(random_state = 42, learning_rate=0.02, n_estimators=300) 
-clf4 = clf3.fit(x_train, y_train)
+# # SVM Classifier
+# clf2 = svm.SVC()
+# clf2 = clf2.fit(x_train, y_train)
 
 
-with open("decisiontree.pkl", "wb") as f:
-    pickle.dump(clf1, f)
+# #Random Forest Classifier
+# clf3 = RandomForestClassifier(n_estimators=100) 
+# clf3 = clf3.fit(x_train, y_train)
 
-with open("svm.pkl", "wb") as f:
-    pickle.dump(clf2, f)
+# #XGBoost Classifier
+# clf4 = XGBClassifier(random_state = 42, learning_rate=0.02, n_estimators=300) 
+# clf4 = clf3.fit(x_train, y_train)
 
-with open("randomForest.pkl", "wb") as f:
-    pickle.dump(clf3, f)
 
-with open("xboost.pkl", "wb") as f:
-    pickle.dump(clf4, f)
+# with open("decisiontree.pkl", "wb") as f:
+#     pickle.dump(clf1, f)
 
-print("All Model Building Done!")
+# with open("svm.pkl", "wb") as f:
+#     pickle.dump(clf2, f)
+
+# with open("randomForest.pkl", "wb") as f:
+#     pickle.dump(clf3, f)
+
+# with open("xboost.pkl", "wb") as f:
+#     pickle.dump(clf4, f)
+
+# print("All Model Building Done!")
 

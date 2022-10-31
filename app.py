@@ -1,28 +1,55 @@
 # on campus and offcampus prediction 
-
+import pandas as pd
 import numpy as np
+import pickle 
+from db import *
+
 from flask import Flask, request, jsonify, render_template
-import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('weights\decisiontree.pkl', 'rb'))
+# model = pickle.load(open('weights\\decisiontree.pkl.pkl', 'rb'))
+with open("weights\\decisiontree.pkl", 'rb') as f:
+    model1=pickle.load(f)
 
+with open("weights\\svm.pkl", 'rb') as f:
+    model2=pickle.load(f)
 
-@app.route('/final/html/offcampus.html')
-def home():
-    return render_template('html/offcampus.html')
+with open("weights\\randomForest.pkl", 'rb') as f:
+    model3=pickle.load(f)
 
-@app.route('/predict',methods=['POST'])
+with open("weights\\xboost.pkl", 'rb') as f:
+    model4=pickle.load(f)
+
+user_data=[]
+
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
+
+@app.route('/offcampus')
+def offcampus():
+    return render_template("offcampus.html")
+
+@app.route('/offcampus',methods=["GET","POST"])
+
 def predict():
-    '''
-    For rendering results on HTML GUI
-    '''
-    int_features = []
-    for x in request.form.values():
-        int_features.append(int(x))
-    final_features = [np.array(int_features)]
-    prediction = model.predict(final_features)
+    if request.method == "POST":
+        lqr=request.form.get("logic")
+    # return render_template("offcampus.html")
+
+@app.route('/oncampus')
+def oncampus():
+    return render_template("oncampus.html")
+
+@app.route('/oncampus',methods=["GET","POST"])
+def predict():
+    pass
+    return render_template("oncampus.html")
+
+@app.route('/resumeParser',methods=['POST'])
+def resumeParser():
+    pass
 
     output = round(prediction[0], 2)
     if(output==1):
