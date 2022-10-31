@@ -23,7 +23,7 @@
         </label>
         <nav class="navbar">
             <ul style="padding-left: 0px;">
-              <a href="#">
+              <a href="./oncampus.html">
     
                 <li>
                   <p>On-campus Placement</p>
@@ -76,22 +76,22 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Logical Quotient Rating</label>
-                            <input type="number" placeholder="Enter your logical quotient rating" required>
+                            <input type="number" min="1" max = "9" placeholder="Enter your logical quotient rating" required>
                         </div>
 
                         <div class="input-field">
                             <label>Hackathons</label>
-                            <input type="number" placeholder="Enter no. of Hackathons" required>
+                            <input type="number" min="0" max = "6" placeholder="Enter no. of Hackathons" required>
                         </div>
 
                         <div class="input-field">
                             <label>Coding Skills Rating</label>
-                            <input type="number" placeholder="Enter your Coding Skills Rating" required>
+                            <input type="number" min="1" max = "9" placeholder="Enter your Coding Skills Rating" required>
                         </div>
 
                         <div class="input-field">
                             <label>Public Speaking Points</label>
-                            <input type="number" placeholder="Enter your Public Speaking Points" required>
+                            <input type="number" min="1" max = "9" placeholder="Enter your Public Speaking Points" required>
                         </div>
 
                         <div class="input-field">
@@ -297,7 +297,7 @@
                     </div>
 
                     <button class="nextBtn">
-                        <span class="btnText" onclick="calculate()">Enter</span>
+                        <span class="btnText" onclick="calculate()">Predict</span>
                         <i class="uil uil-navigator"></i>
                     </button>
 
