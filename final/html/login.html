@@ -69,14 +69,14 @@
 
     <div class="container">
         <header>SIGN UP</header>
-        <form action="#">
+        <form id="loginForm">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Details</span>
                     <div class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
-                            <input type="text" id ="full_name" placeholder="Enter your Full Name" required>
+                            <input type="text" id ="name" placeholder="Enter your Full Name" required>
                         </div>
 
                         <div class="input-field">
@@ -95,11 +95,11 @@
                         </div>
                     </div>
                     <button class="nextBtn">
-                        <span class="btnText" onclick="login()">LogIn</span>
+                        <span class="btnText" type="submit" onclick="login()">LogIn</span>
                         <i class="uil uil-navigator"></i>
                     </button>
                     <button class="nextBtn">
-                        <span class="btnText" onclick="register()">Register</span>
+                        <span class="btnText" onclick="signUp()">Register</span>
                         <i class="uil uil-navigator"></i>
                     </button>
 
@@ -110,11 +110,12 @@
         
     </div>
 </body>
-<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
+</script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js"></script>
+<script src="/final\js\firebase.js"></script>
 <script src="/final\js\login.js"></script>
+
 </html>

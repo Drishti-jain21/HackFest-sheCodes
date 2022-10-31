@@ -68,7 +68,7 @@
     <div class="container">
         <header>OFF-CAMPUS PLACEMENT PREDICTOR</header>
 
-        <form action="#">
+        <form action="{{url_for('predict')}}" method="post">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Details</span>
@@ -296,22 +296,19 @@
 
                     </div>
 
-                    <button class="nextBtn">
-                        <span class="btnText" onclick="calculate()">Predict</span>
+                    <button class="nextBtn" type="submit">Predict
                         <i class="uil uil-navigator"></i>
                     </button>
 
-                    </div>
                 </div>
 
-                <div class="details ID">
-
-                    <div class="fields">
-                        
-                </div> 
             </div>
 
         </form>
+        <br>
+        <div class ="pred">
+            <p class = "result"><b>{{ prediction_text }}</b></p>
+        </div>
     </div>
 
 </body>

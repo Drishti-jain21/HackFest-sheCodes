@@ -355,3 +355,16 @@ form .buttons button , .backBtn{
         width: 100%;
     }
 }
+
+.result {
+  font-weight: bold;
+  background-color: #4CAF50;
+  padding: 8px 16px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius:3px;
+  color: black;
+  border-color: black;
+  font-family: Arial;
+  border-style: ridge;
+}
