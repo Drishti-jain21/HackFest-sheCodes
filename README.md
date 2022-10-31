@@ -1,4 +1,5 @@
-# Get Placed with our StudentHelper
+<h1 align="center">
+Get Placed with our StudentHelper <✌️/>
 
 <!-- - Predict your offcampus, oncampus 
 
