@@ -8,6 +8,9 @@ flask = "*"
 numpy = "*"
 pandas = "*"
 sklearn = "*"
+gunicorn = "*"
+seaborn = "*"
+xgboost = "*"
 
 [dev-packages]
 
