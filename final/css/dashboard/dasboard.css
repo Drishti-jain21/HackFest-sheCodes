@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Quicksand',sans-serif;
+}
+
+body{
+    width : 100%;
+    background:navy;
+    position: relative;
+    display:flex;
+}
+
+#menu{
+    background: white;
+    width:15%;
+    height:100%; 
+}
+
+#menu .logo img{
+    width:50px;
+    margin: 15px;
+}
+
+#menu .items{
+    margin-top: 40px;
+}
+#menu .items li{
+    list-style:none;
+    padding: 15px 0px;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+    background: grey;
+    cursor: pointer;
+}
+
+#menu .items li:nth-child(1){
+    border-left: 4px solid black;
+}
+
+#menu .items li i{
+    color: black;
+    width: 30px;
+    height : 30px;
+    line-height:30px;
+    text-align: center;
+    font-size:14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i,
+#menu .items li:hover a{
+    color: lightpink;
+}
+
+#menu .items li a{
+    text-decoration:none;
+    color: black;
+    font-weight:300px;
+    transition: 0.3s ease;
+}
+
+#interface{
+    width : calc(100% - 100px);
+}
+
+#interface .navigation{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cornsilk ;
+    padding: 15px 30px;
+    border-bottom: 3px solid rgb(41, 202, 210);
+}
+
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+#interface .navigation .profile img{
+    width:30px;
+    height:30px;
+    object-fit:cover;
+    border-radius:50%;
+}

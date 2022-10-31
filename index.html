@@ -1,119 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Placement Predictor</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <!--Quicksand font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
 
-    <title>PP</title>
+  <!--Header-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neucha&display=swap%27" />
 
-    
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-    <link href="css/grayscale.min.css" rel="stylesheet">
+  <!--Header font-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 
-  </head>
+  <!--External css-->
+  <link rel="stylesheet" href="./final\css\landing.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
 
-  <body id="page-top">
+<body>
+  <div class="landingContainer">
+    <div class="navContainer">
+      <a href="#" class="navLogo">
+        <img src="final\assets\landing\logo.png" alt="logo" />
+      </a>
 
-  
-    <header class="masthead">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="brand-heading">Placement Predictor</h2>
-              <p class="intro-text">START!</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
+      <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar">
+        <img src="https://gdurl.com/b3bF" alt="" />
+      </label>
+      <nav class="navbar">
+        <ul style="padding-left: 0px;">
+          <a href="#">
+            <li>
+              <p>On-campus Placement</p>
+            </li>
+          </a>
+          <a href="final\html\offcampus.html">
+            <li>
+              <p>Off-campus Placement</p>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <p>Resume Parser</p>
+            </li>
+          </a>
+          <a href="final\html\login.html">
+            <li>
+              <p>SIGN-UP</p>
+            </li>
+          </a>
+          <a href="final\html\teams.html">
+            <li>
+              <p>Team</p>
+            </li>
+          </a>
+          <a href="final\html\contactus.html">
+            <li>
+              <p>Contact US</p>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="paralax">
+      <div class="paralax-item p-item1"></div>
+      
+    </div>
+
+    <div class="container">
+      <div class="content-header">
+
+        <h1 class="neon loader" id="loader"></h1>
+        <h2 class="sub" style="font-family: 'Neucha', cursive;">
+          <strong>Get Yourself Placed!</strong>
+        </h2>
+      </div>
+      <div class="content">
+        <div class="about-us">
+          <div class="container">
+            <p class="h3 text-left"><b>About Us</b></p>
+            <p class="responsive-paragraph">
+              StudentHelper is the platform where a student can check their skills along with knowing the percent placement
+              surity based on their skills, cgpa. The student can also get their resume checked. All this is done using Machine
+              Learning Models.
+            </p>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+    <footer style="padding-left: 0px;">
+      <ul class="social_icon">
+        <li>
+          <a href="" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="final\js\landing.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
+  <script src="final\js\navbar.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 
-    <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-             <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-        <title>Placement Predictor</title>
-        <h1> Please Enter Your Details</h1>
-        <p> We use our advanced machine learning algorithms, including Neural Networks to provide you better results</p>
-            <form action = "http://localhost:5000/form" method = "post">
-                <div class="form-group">
-                <label for="inputYourName"><h4>Please Enter Your Name ?</h4></label>
-                <input name = "name1" class="form-control" placeholder="Your Name" type="text" id="inputYourName"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYour10thCGPA"><h4>Please Enter Your 10th CGPA ?</h4></label>
-                    <input name = "name2"  class="form-control" placeholder="Your 10th Percentage" type="text" id="inputYour10thCGPA"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYour12thCGPA"><h4>Please Enter Your 12th CGPA ?</h4></label>
-                    <small><p> If 67% write 6.7 </p></small>
-                    <input name = "name3"  class="form-control" placeholder="e.g. 6.7" type="text" id="inputYour12thCGPA"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYour1stsemesterCGPA"><h4>Please Enter Your 1st Semester CGPA ?</h4></label>
-                    <input  name = "name4"  class="form-control" placeholder="Your 1st Semester Percentage" type="text" id="inputYour1stsemesterCGPA"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYour2ndsemesterCGPA"><h4>Please Enter Your 2nd Semester CGPA ?</h4></label>
-                    <input name = "name5"  class="form-control" placeholder="Your 2nd Semester Percentage" type="text" id="inputYour2ndsemesterCGPA"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYour3rdsemesterCGPA"><h4>Please Enter Your 3rd Semester CGPA ?</h4></label>
-                    <input name = "name6"  class="form-control" placeholder="Your 3rd Semester Percentage" type="text" id="inputYour3rdsemesterCGPA"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYour4thsemesterCGPA"><h4>Please Enter Your 4th Semester CGPA ?</h4></label>
-                    <input name = "name7"  class="form-control" placeholder="Your 4th Semester Percentage" type="text" id="inputYour4thsemesterCGPA"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYour5thsemesterCGPA"><h4>Please Enter Your 5th Semester CGPA ?</h4></label>
-                    <input name = "name8"  class="form-control" placeholder="Your 5th Semester Percentage" type="text" id="inputYour5thsemesterCGPA"/>
-                </div>
-                 <div class="form-group">
-                    <label for="inputYourNoofCertificates"><h4> Enter your current Attendance</h4></label>
-		    <small><p> Example:If 67% write 6.7</p></small>
-                    <input name = "name9"  class="form-control" placeholder="e.g. 6.7" type="text" id="inputYourNoofCertificates"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYourNoofCertificates"><h4> Enter no. of certifications you have ?</h4></label>
-                    <input name = "name10"  class="form-control" placeholder="Enter no. of certifications you have" type="text" id="inputYourNoofCertificates"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYourLanguages"><h4> Enter no. of programming languages and frameworks you have learnt ?</h4></label>
-       
-                    <input  name = "name11" class="form-control" placeholder="e.g. python, java, angularjs" type="text" id="inputYourLanguages"/>
-                </div>
-                <div class="form-group">
-                    <label for="inputYourTechnologies"><h4> Field you are working in ?</h4></label>
-
-                    <small><p> Example: Data Science, Machine Learning, IoT, Cloud Computing, Android Development, IOS</p></small>
-                    <input name = "name12"  class="form-control" placeholder="e.g. machine learning, web development, android" type="text" id="inputYourTechnologies"/>
-                </div>
-                <button value="submit" type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </body>
+</body>
 
 </html>
