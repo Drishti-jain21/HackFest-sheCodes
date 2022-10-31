@@ -14,6 +14,48 @@ const firebaseConfig = {
   const auth = firebase.auth()
   const database = firebase.database()
 
+   // Validate Functions
+   function validate_email(email) {
+    expression = /^[^@]+@\w+(\.\w+)+\w$/
+    if (expression.test(email) == true) {
+      // Email is good
+      return true
+    } else {
+      // Email is not good
+      return false
+    }
+  }
+  
+  function validate_password(password) {
+    // Firebase only accepts lengths greater than 6
+    if (password < 6) {
+      return false
+    } else {
+      return true
+    }
+  }
+  
+  function validate_phone(password) {
+    if (phone !=10) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  function validate_field(field) {
+    if (field == null) {
+      return false
+    }
+  
+    if (field.length <= 0) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+
   function register () {
     // Get all our input fields
     email = document.getElementById('email').value
@@ -63,6 +105,8 @@ const firebaseConfig = {
       alert(error_message)
     })
   }
+
+   
   
   // Set up our login function
   function login () {
@@ -109,43 +153,3 @@ const firebaseConfig = {
   
   
   
-  // Validate Functions
-  function validate_email(email) {
-    expression = /^[^@]+@\w+(\.\w+)+\w$/
-    if (expression.test(email) == true) {
-      // Email is good
-      return true
-    } else {
-      // Email is not good
-      return false
-    }
-  }
-  
-  function validate_password(password) {
-    // Firebase only accepts lengths greater than 6
-    if (password < 6) {
-      return false
-    } else {
-      return true
-    }
-  }
-  
-  function validate_phone(password) {
-    if (phone !=10) {
-      return false
-    } else {
-      return true
-    }
-  }
-
-  function validate_field(field) {
-    if (field == null) {
-      return false
-    }
-  
-    if (field.length <= 0) {
-      return false
-    } else {
-      return true
-    }
-  }

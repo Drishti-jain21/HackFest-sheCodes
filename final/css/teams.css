@@ -112,12 +112,13 @@ body {
 }
 
 .container .card:hover h4 {
-  opacity: 1;
+  opacity: 2;
 }
 
 
 h4 {
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: white;
   text-align: center;
   font-size: 1.75rem;
   margin-bottom: 0rem;
