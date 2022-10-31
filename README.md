@@ -27,7 +27,7 @@ To do __
     <img src="https://main--placement-predictor.netlify.app/final/assets/landing/logo.png" width="100px" alt="">
   </a>
 
-  <h3 align="center">Get Placed - StudentHelper</h3>
+  <h3 align="center">StudentHelper</h3>
 
   <p align="center">
     <a href="https://main--placement-predictor.netlify.app/#" target="blank">Live Demo</a> |
