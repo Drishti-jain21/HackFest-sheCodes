@@ -68,34 +68,34 @@
     <div class="container">
         <header>OFF-CAMPUS PLACEMENT PREDICTOR</header>
 
-        <form action="#">
+        <form action= "{{ url_for("predict")}}" method="post">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Details</span>
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Logical Quotient Rating</label>
-                            <input type="number" placeholder="Enter your logical quotient rating" required>
+                            <label for="lqr">Logical Quotient Rating</label>
+                            <input type="number" id="lqr" name="logic" placeholder="Enter your logical quotient rating" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Hackathons</label>
-                            <input type="number" placeholder="Enter no. of Hackathons" required>
+                            <label for="hac">Hackathons</label>
+                            <input type="number" id="hac" name="hackathon" placeholder="Enter no. of Hackathons" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Coding Skills Rating</label>
-                            <input type="number" placeholder="Enter your Coding Skills Rating" required>
+                            <label for="csr">Coding Skills Rating</label>
+                            <input type="number" id="csr" name="coding" placeholder="Enter your Coding Skills Rating" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Public Speaking Points</label>
-                            <input type="number" placeholder="Enter your Public Speaking Points" required>
+                            <label for="psp">Public Speaking Points</label>
+                            <input type="number" id="psp" name="speaking" placeholder="Enter your Public Speaking Points" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Self-Learning Capability</label>
+                            <label for="slc">Self-Learning Capability</label>
                             <select required>
                                 <option disabled selected>Select Yes/NO</option>
                                 <option>Yes</option>
@@ -104,7 +104,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Extra-Courses</label>
+                            <label for="ec">Extra-Courses</label>
                             <select required>
                                 <option disabled selected>Select Yes/NO</option>
                                 <option>Yes</option>
@@ -113,7 +113,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Workshops</label>
+                            <label for="wor">Workshops</label>
                             <select required>
                                 <option disabled selected>Select Workshop done</option>
                                 <option>Testing</option>
@@ -128,12 +128,12 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Certifications</label>
+                            <label for="cer">Certifications</label>
                             <select required>
                                 <option disabled selected>Select Certifications</option>
                                 <option>information security</option>
                                 <option>shell programming</option>
-                                <option>r programming</option>
+                                <option>R programming</option>
                                 <option>distro making</option>
                                 <option>machine learning</option>
                                 <option>full stack</option>
@@ -144,7 +144,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Reading and Writing Skills</label>
+                            <label for="rws">Reading and Writing Skills</label>
                             <select required>
                                 <option disabled selected>Select skills</option>
                                 <option>poor</option>
@@ -154,7 +154,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Memory Capability score</label>
+                            <label for="mcs">Memory Capability score</label>
                             <select required>
                                 <option disabled selected>Select score</option>
                                 <option>poor</option>
@@ -164,9 +164,9 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Subject</label>
+                            <label for="sub">Subject</label>
                             <select required>
-                                <option disabled selected>Select Subject Interested in</option>
+                                <option disabled selected>Select Subject Interested In</option>
                                 <option>programming</option>
                                 <option>Management</option>
                                 <option>data engineering</option>
@@ -176,15 +176,15 @@
                                 <option>parallel computing</option>
                                 <option>IOT</option>
                                 <option>Computer Architecture</option>
-                                <option>hacking</option>
+                                <option>Hacking</option>
                             </select>
                         </div>
 
                         <div class="input-field">
-                            <label>Career</label>
+                            <label for="car">Career</label>
                             <select required>
                                 <option disabled selected>Select Career Interested in</option>
-                                <option>testing</option>
+                                <option>Testing</option>
                                 <option>system developer</option>
                                 <option>Business process analyst</option>
                                 <option>security</option>
@@ -194,7 +194,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Company</label>
+                            <label for="com">Company</label>
                             <select required>
                                 <option disabled selected>Type of company Interested in</option>
                                 <option>BPA</option>
@@ -211,7 +211,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Taken inputs from Seniors/Elders</label>
+                            <label for="Seniors">Taken inputs from Seniors/Elders</label>
                             <select required>
                                 <option disabled selected>Select Yes/NO</option>
                                 <option>Yes</option>
@@ -220,7 +220,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Books</label>
+                            <label for="books">Books</label>
                             <select required>
                                 <option disabled selected>Select Genre of Books</option>
                                 <option>Series</option>
@@ -259,7 +259,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Management or Technical</label>
+                            <label for="man">Management or Technical</label>
                             <select required>
                                 <option disabled selected>Select</option>
                                 <option>Management</option>
@@ -268,7 +268,7 @@
                         </div>
                         
                         <div class="input-field">
-                            <label>Hard/Smart worker</label>
+                            <label for="hsw">Hard/Smart worker</label>
                             <select required>
                                 <option disabled selected>Select</option>
                                 <option>Hard Worker</option>
@@ -277,7 +277,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Worked in Team</label>
+                            <label for="wit">Worked in Team</label>
                             <select required>
                                 <option disabled selected>Select Yes/NO</option>
                                 <option>Yes</option>
@@ -286,7 +286,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Introvert?</label>
+                            <label for="introvert">Introvert?</label>
                             <select required>
                                 <option disabled selected>Select Yes/NO</option>
                                 <option>Yes</option>
@@ -312,6 +312,7 @@
             </div>
 
         </form>
+        <!-- prediction goes here from flask -->
     </div>
 
 </body>
