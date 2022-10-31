@@ -1,9 +1,9 @@
 {
 "meta":{"test_sets":[],"test_metrics":[],"learn_metrics":[{"best_value":"Min","name":"CrossEntropy"}],"launch_mode":"Train","parameters":"","iteration_count":5,"learn_sets":["learn"],"name":"experiment"},
 "iterations":[
-{"learn":[0.6460034438],"iteration":0,"passed_time":0.1415187383,"remaining_time":0.5660749531},
-{"learn":[0.6054613411],"iteration":1,"passed_time":0.1422200543,"remaining_time":0.2133300814},
-{"learn":[0.5676532959],"iteration":2,"passed_time":0.1428138619,"remaining_time":0.09520924124},
-{"learn":[0.5373964402],"iteration":3,"passed_time":0.1433806228,"remaining_time":0.0358451557},
-{"learn":[0.5126927253],"iteration":4,"passed_time":0.1439338906,"remaining_time":0}
+{"learn":[0.65421867],"iteration":0,"passed_time":0.1384529399,"remaining_time":0.5538117594},
+{"learn":[0.6160716974],"iteration":1,"passed_time":0.139259847,"remaining_time":0.2088897705},
+{"learn":[0.5822766254],"iteration":2,"passed_time":0.1398289454,"remaining_time":0.0932192969},
+{"learn":[0.5548252113],"iteration":3,"passed_time":0.1406470375,"remaining_time":0.03516175938},
+{"learn":[0.5297962108],"iteration":4,"passed_time":0.1411426899,"remaining_time":0}
 ]}

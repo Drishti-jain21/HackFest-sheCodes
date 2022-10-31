@@ -6,15 +6,43 @@ from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score
 from sklearn import preprocessing
 from catboost import CatBoostClassifier
+import pickle
 
 df = pd.read_csv("data\on_campus.csv")
 
+df = df.drop(['Age'],axis=1)
+
+
+# print(df.head())
+# Number Encoding
+# col= df[["Gender"]]
+# for i in col:
+#     cleanup_nums = {i: {"Female": 1, "Male": 0}}
+#     df = df.replace(cleanup_nums)
+
+# col= df[["Stream"]]
+# for i in col:
+#     cleanup_nums = {i: {"Electronics And Communication": 1,"Computer Science": 2,"Information Technology":3,"Mechanical":4}}
+#     df = df.replace(cleanup_nums)
+
+# print(df.head()) 
+
+'''
+electronics And communication --> 3
+Computer Science --> 1
+Information Technology--> 4
+ Mechanical -->
+ Civil --> 2
+
+'''
 pre = preprocessing.LabelEncoder()
 
 df["Gender"] = pre.fit_transform(df["Gender"])
 df["Stream"] = pre.fit_transform(df["Stream"])
 
-X = df[['Age', 'Gender', 'Internships', 'CGPA', 'Hostel',
+print(df.head())
+
+X = df[['Gender', 'Internships', 'CGPA', 'Hostel',
        'HistoryOfBacklogs', 'Stream']]
 
 y = df["PlacedOrNot"]
@@ -34,3 +62,5 @@ pred = clf.predict(x_test)
 acc = accuracy_score(y_test, pred)
 print ("Accuracy is ",acc)
 
+with open("oncampus.pkl", "wb") as f:
+    pickle.dump(clf, f)
