@@ -23,7 +23,7 @@
         </label>
         <nav class="navbar">
             <ul style="padding-left: 0px;">
-              <a href="#">
+              <a href="./oncampus.html">
     
                 <li>
                   <p>On-campus Placement</p>
@@ -76,22 +76,22 @@
                     <div class="fields">
                         <div class="input-field">
                             <label for="lqr">Logical Quotient Rating</label>
-                            <input type="number" id="lqr" name="logic" placeholder="Enter your logical quotient rating" required>
+                            <input type="number" min="1" max = "9" id="lqr" name="logic" placeholder="Enter your logical quotient rating" required>
                         </div>
 
                         <div class="input-field">
                             <label for="hac">Hackathons</label>
-                            <input type="number" id="hac" name="hackathon" placeholder="Enter no. of Hackathons" required>
+                            <input type="number" id="hac" name="hackathon" min="0" max = "6" placeholder="Enter no. of Hackathons" required>
                         </div>
 
                         <div class="input-field">
                             <label for="csr">Coding Skills Rating</label>
-                            <input type="number" id="csr" name="coding" placeholder="Enter your Coding Skills Rating" required>
+                            <input type="number" min="1" max = "9" id="csr" name="coding" placeholder="Enter your Coding Skills Rating" required>
                         </div>
 
                         <div class="input-field">
                             <label for="psp">Public Speaking Points</label>
-                            <input type="number" id="psp" name="speaking" placeholder="Enter your Public Speaking Points" required>
+                            <input type="number" min="1" max = "9" id="psp" name="speaking" placeholder="Enter your Public Speaking Points" required>
                         </div>
 
                         <div class="input-field">
@@ -297,7 +297,7 @@
                     </div>
 
                     <button class="nextBtn">
-                        <span class="btnText" onclick="calculate()">Enter</span>
+                        <span class="btnText" onclick="calculate()">Predict</span>
                         <i class="uil uil-navigator"></i>
                     </button>
 

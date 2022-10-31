@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>On campus placement</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css\oncampus.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    
+<body>
+    <div class='navContainer'>
+
+        <a href="#" class='navLogo'><img src="../assets\landing\logo.png" alt="logo"></a>
+    
+    
+        <input type="checkbox" id='menu-bar' />
+        <label for="menu-bar">
+            <img src="../assets/header_footer/hamburger.png" alt="hamburger-icon">
+        </label>
+        <nav class="navbar">
+            <ul style="padding-left: 0px;">
+              <a href="./oncampus.html">
+    
+                <li>
+                  <p>On-campus Placement</p>
+                </li>
+              </a>
+              <a href="./offcampus.html">
+                <li>
+                  <p>Off-campus Placement</p>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <p>Resume Parser</p>
+                </li>
+              </a>
+              <a href="./login.html">
+                <li>
+                  <p>SIGN-UP</p>
+                </li>
+              </a>
+              <div class="dropdown">
+                <button class="dropbtn">Resources<i class="fa fa-caret-down"></i>
+                  <div class="dropdown-content">
+                    <a href=" https://leetcode.com/">Coding Practice</a>
+                    <a href=" https://clist.by/">Contests</a>
+                  </div>
+                </button>
+              </div>
+              <a href="./teams.html">
+                <li>
+                  <p>Team</p>
+                </li>
+              </a>
+              <a href="./contactus.html">
+                <li>
+                  <p>Contact US</p>
+                </li>
+              </a>
+            </ul>
+          </nav>
+    </div>
+    <div class="container">
+        <header>ON-CAMPUS PLACEMENT PREDICTOR</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" min="19" max = "26" placeholder="Enter your age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Stream</label>
+                            <select required>
+                                <option disabled selected>Select Stream</option>
+                                <option>Testing</option>
+                                <option>database security</option>
+                                <option>game development</option>
+                                <option>data science</option>
+                                <option>system designing</option>
+                                <option>hacking</option>
+                                <option>cloud computing</option>
+                                <option>web technologies</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>College Name</label>
+                            <input type="text" placeholder="Enter name of college">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Location of college</label>
+                            <input type="text" placeholder="Enter location of college" >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Internships</label>
+                            <input type="number" min="0" max = "3" placeholder="Enter no. of internships done" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CGPA</label>
+                            <input type="number" min="5" max = "9" placeholder="Enter your CGPA" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Hostel</label>
+                            <select required>
+                                <option disabled selected>Yes(1)/No(0)</option>
+                                <option>1</option>
+                                <option>0</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Backlog</label>
+                            <select required>
+                                <option disabled selected>Yes(1)/No(0)</option>
+                                <option>1</option>
+                                <option>0</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Placed or not</label>
+                            <select required>
+                                <option disabled selected>Yes(1)/No(0)</option>
+                                <option>1</option>
+                                <option>0</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText" onclick="calculate()">Predict</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+
+                    <div class="fields">
+                        
+                </div> 
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
