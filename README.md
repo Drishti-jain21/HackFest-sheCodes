@@ -80,4 +80,27 @@ _Below is an example of how you can instruct your audience on installing and set
 ---
 
 ## Let's do a walkthrough of our app
+   
+   ![image](https://user-images.githubusercontent.com/55908216/199213947-7f4843b0-e88b-4e86-af59-8424d0c35c6d.png)
+
+   The main page of the web app
+   
+   ![image](https://user-images.githubusercontent.com/55908216/199214098-02b99034-618e-4beb-8b26-078662a494eb.png)
+   
+   On-campus placement predictor
+   
+   ![image](https://user-images.githubusercontent.com/55908216/199214279-345edf3d-0106-4f11-889c-1f2ce07cbba5.png)
+   
+   Off-campus placement predictor
+   
+   ![image](https://user-images.githubusercontent.com/55908216/199214747-60a70bd3-e5fc-4181-945e-308325d3c7dd.png)
+   
+   Sign up page
+   
+   ![image](https://user-images.githubusercontent.com/55908216/199214869-dff58d7f-5409-40d6-816d-a9ad8848f5f3.png)
+
+   Contact us
+
+
+
 
