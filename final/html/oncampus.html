@@ -73,7 +73,7 @@
     <div class="container">
         <header>ON-CAMPUS PLACEMENT PREDICTOR</header>
 
-        <form action="{{ url_for('predict')}}" method="post">
+        <form>
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Details</span>
@@ -156,18 +156,20 @@
                         </div>
 
                     </div>
+                    <script>    
+                    function myFunction() {
+                      var h = document.createElement("Based upon the previous years data you may not get placed. But keep working hard!");
+                      document.body.appendChild(h);
+                  }
+                  </script>
+                    <button onclick="myFunction()" type="submit">Predict</button>
 
-                    <button id="click">Predict
-                  </button>
-                    <center><p class="output"></p></center>
                     </div>
                 </div>
 
         </form>
-        <br>
 
     </div>
-    <script src="../js\offcampus.js"></script>
 </body>
 
 </html>

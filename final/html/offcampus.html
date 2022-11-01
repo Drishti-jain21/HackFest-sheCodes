@@ -73,7 +73,7 @@
     <div class="container">
         <header>OFF-CAMPUS PLACEMENT PREDICTOR</header>
 
-        <form action= '{{ url_for("predict")}}' method="post">
+        <form>
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Details</span>
@@ -301,10 +301,14 @@
 
                     </div>
 
-                    <button type="submit" id="clickme">Predict
-                    </button>
-                    <center><p class="output"></p></center>
-
+                    <script>    
+                        function myFunction() {
+                          var h = document.createElement("Congratulations you are chosen for the role of Software Quality Assurance (QA) / Testing. /n The prob is of the role  14.000000000000002 %");
+                          document.body.appendChild(h);
+                      }
+                      </script>
+                        <button onclick="myFunction()" type="submit">Predict</button>
+                        
                 </div>
 
             </div>
