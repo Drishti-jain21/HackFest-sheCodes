@@ -291,15 +291,12 @@ form .fields .input-field{
 }
 .input-field input :focus,
 .input-field select:focus{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
 }
-.input-field select,
-.input-field input[type="date"]{
-    color: #707070;
-}
-.input-field input[type="date"]:valid{
-    color: #333;
-}
+
 .container form button, .backBtn{
     display: flex;
     align-items: center;
