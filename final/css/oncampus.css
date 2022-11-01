@@ -289,7 +289,7 @@ form .fields .input-field{
     height: 42px;
     margin: 8px 0;
 }
-.input-field input :focus,
+.input-field input:focus,
 .input-field select:focus{
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   padding: 3px 0px 3px 3px;
@@ -318,7 +318,7 @@ form .fields .input-field{
     font-weight: 400;
 }
 form button:hover{
-    background-color: #265df2;
+    background-color: #29f226;
 }
 form button i,
 form .backBtn i{
