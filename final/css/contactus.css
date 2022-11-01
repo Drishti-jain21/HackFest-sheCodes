@@ -247,11 +247,6 @@ body{
   font-size: 18px;
   font-weight: 500;
 }
-.content .left-side .details .text-one,
-.content .left-side .details .text-two{
-  font-size: 14px;
-  color: #afafb6;
-}
 .container .content .right-side{
   width: 75%;
   margin-left: 75px;
@@ -264,7 +259,8 @@ body{
 .right-side .input-box{
   height: 50px;
   width: 100%;
-  margin: 12px 0;
+  margin: 15px 0;
+  margin-top:15px;
 }
 .right-side .input-box input,
 .right-side .input-box textarea{

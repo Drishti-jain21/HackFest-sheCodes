@@ -238,16 +238,6 @@ body{
     background-color: #fff;
     transition: 0.3s ease;
 }
-.container form .form.second{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(100%);
-}
-form.secActive .form.second{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
-}
 form.secActive .form.first{
     opacity: 0;
     pointer-events: none;
@@ -272,6 +262,7 @@ form .fields .input-field{
     width: calc(100% / 3 - 15px);
     flex-direction: column;
     margin: 4px 0;
+    
 }
 .input-field label{
     font-size: 12px;
@@ -289,16 +280,12 @@ form .fields .input-field{
     height: 42px;
     margin: 8px 0;
 }
-.input-field input :focus,
+.input-field input:focus,
 .input-field select:focus{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
-}
-.input-field select,
-.input-field input[type="date"]{
-    color: #707070;
-}
-.input-field input[type="date"]:valid{
-    color: #333;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
 }
 .container form button, .backBtn{
     display: flex;
@@ -367,4 +354,13 @@ form .buttons button , .backBtn{
   border-color: black;
   font-family: Arial;
   border-style: ridge;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
 }
