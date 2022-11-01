@@ -223,7 +223,7 @@ body {
   z-index: 0;
   max-width: 1140px;
   margin: 0 auto;
-  margin-top: 123vh;
+  margin-top: 40vh;
 }
 
 .content-header {
@@ -478,7 +478,7 @@ body {
 
   .responsive-paragraph {
     font-size: 17px !important;
-    color: rgb(218, 25, 25);
+    color: rgb(255, 255, 255);
     letter-spacing: 0.6px;
     margin: 0px 0px;
     width: 70%;
@@ -507,7 +507,7 @@ body {
   .responsive-paragraph {
     text-align: center;
     font-size: 25px !important;
-    color: rgb(218, 25, 25);
+    color: rgb(255, 255, 255);
     letter-spacing: 1.5px;
     text-align: left;
     width: 85%;
